@@ -66,7 +66,7 @@ function time() {
 
 function shuffle() {
   let images = document.querySelectorAll("img")
-  let srcs = ['final-project/images/1.jpg', 'final-project/images/2.jpg', 'final-project/images/3.jpg', 'final-project/images/4.jpg', 'final-project/images/5.jpg', 'final-project/images/6.jpg', 'final-project/images/7.jpg', 'final-project/images/8.jpg', 'final-project/images/9.jpg', 'final-project/images/10.jpg', 'final-project/images/11.jpg', 'final-project/images/12.jpg', 'final-project/images/1.jpg', 'final-project/images/2.jpg', 'final-project/images/3.jpg', 'final-project/images/4.jpg', 'final-project/images/5.jpg', 'final-project/images/6.jpg', 'final-project/images/7.jpg', 'final-project/images/8.jpg', 'final-project/images/9.jpg', 'final-project/images/10.jpg', 'final-project/images/11.jpg', 'final-project/images/12.jpg']
+  let srcs = ['./images/1.jpg', './images/2.jpg', './images/3.jpg', './images/4.jpg', './images/5.jpg', './images/6.jpg', './images/7.jpg', './images/8.jpg', './images/9.jpg', './images/10.jpg', './images/11.jpg', './images/12.jpg', './images/1.jpg', './images/2.jpg', './images/3.jpg', './images/4.jpg', './images/5.jpg', './images/6.jpg', './images/7.jpg', './images/8.jpg', './images/9.jpg', './images/10.jpg', './images/11.jpg', './images/12.jpg']
 
   for (let i = srcs.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * i)
