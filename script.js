@@ -15,6 +15,10 @@ function check() {
   }
 }
 
+function nameAlias(){
+  var username = document.getElementById("myusername").value;
+  document.querySelector('#nama').innerHTML = `Hello ${username}!`
+}
 
 
 function matched() {
@@ -22,7 +26,7 @@ function matched() {
   cardPair[1].state = 'blocked'
   count = 0
   cardPair = []
- 
+
   score++
   document.querySelector('#score').innerHTML = score
   move++
@@ -109,9 +113,26 @@ for (let i = 0; i < cards.length; i++) {
   })
 }
 
+let modal = document.querySelector(".modal");
+let trigger = document.querySelector(".trigger");
+let closeButton = document.querySelector(".close-button");
 
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+  if (!username) {
+    modal.classList.toggle("show-modal")
+  }
+}
 
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
 
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
 
 
 

@@ -10,7 +10,17 @@
 </head>
 
 <body>
+  <div id="welcome">
+    <h1>DOTA 2 Memory Games </h1>
+    <ol>
+      <li>Click on any card to play!</li>
+      <li>Your mission is to turn over pairs of matching cards</li>
+      <li>use your skills to find all the cards as fast as you can </li>
+      <li>good luck!</li>
+    </ol>
+  </div>
   <div id="board">
+    <div id="nama"></div>
     <span>
       <h1>Score:
         <span id="score">0</span>
@@ -20,7 +30,7 @@
         <span id='move'>0</span>
       </h1>
       <span id="menang">You Won!</h1>
-    </span>
+      </span>
 
   </div>
   <div id="container">
@@ -169,14 +179,28 @@
         <div class="back"><img src=''></div>
       </div>
     </div>
-    
-  </div>
-  
 
-  
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div id="username">
+        <form method="post" class="form" onsubmit="return false">
+          <h1><label for="user" style="padding-top:13px">&nbsp;Masukkan Nama Anda</label></h1>
+          <input id="myusername" class="form-content" name="username" value="Mang oleh"/>
+          <div class="form-border"></div>
+          <button id="btn" class="trigger" onclick="nameAlias()">OK</button> 
+        </form>
+      </div>
+    </div>
+  </div>
+
+
 
 
 </body>
 <script src="script.js"></script>
+
 
 </html>
